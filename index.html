@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんポン・あっちむいてホイ</title>
+  <link rel="stylesheet" href="atchimuite.css">
+</head>
+<body>
+<div class="box">
+  <div id="message1">
+    <h3>じゃんけんポン・あっちむいてホイ</h3>
+  </div>
+  <div>
+    <img src="janken.png" id="picture1" alt=""　width="150" height="150">
+  </div>
+</div>
+<div class="box">
+  <div id="message2" >
+      <h3></h3>
+  </div>
+  <div>
+    <img src="" id="picture2" alt=""　width="150" height="150">
+  </div>
+</div>
+<div>
+  <img src="" id="picture3" alt="" width="150" height="150">
+</div>
+<div id="message3" >
+    <h3>スタートボタンを押してね</h3>
+</div>
+<div id=startButton>
+  <input class="btn" type="button" value="スタート" onclick="start();">
+</div>
+<div id="rpsButton"></div>
+<div>
+  <div id="ltwButton"></div>
+</div>
+<div id="again"></div>
+<h3>勝ち： <input type="TEXT" id="win" size="8"> 　負け： <input type="TEXT" id="lose" size="8"> <input class="btn" type="RESET" value="リセット" onclick="reset()"></h3>
+<script src="atchimuite.js"></script>
+</body>
+</html>

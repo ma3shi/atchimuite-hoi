@@ -1,0 +1,38 @@
+body {
+  background-color: lemonchiffon;
+  width: 500px;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+h3 {color:blue;}
+
+.box{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* スタート・もう一度・リセットボタン*/
+.btn {
+  display: inline-block;
+  height: 30px;
+  width: 120px;
+  text-align:center;
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+}
+/*ぐーちょきぱー・上下左右ボタン*/
+.btn2 {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  text-align:center;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+}
