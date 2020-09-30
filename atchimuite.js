@@ -191,11 +191,9 @@ function lookThisWay(myNum) {
   //勝敗数を加算
   if(myNum === cpuNum ) {
     result = "あなたの勝ち";
-    resultImg = winImg ;
     winNum++;
   } else {
     result = "あなたの負け";
-    resultImg = loseImg;
     loseNum++;
   }  
   //勝敗数を表示
