@@ -8,10 +8,6 @@ let loseNum = 0;
 let win = document.getElementById("win")
 let lose = document.getElementById("lose")
 
-//結果の画像
-const winImg = "win.png" ;
-const loseImg = "lose.png";
-
 //もう一度
 function again(){
   document.getElementById("message1").innerHTML = `<h3>じゃんけんポン・あっちむいてホイ</h3>`;
@@ -19,7 +15,6 @@ function again(){
   document.getElementById("message3").innerHTML = `<h3>スタートボタンを押してね</h3>`;
   document.getElementById('picture1').src = 'janken.png';
   document.getElementById('picture2').src = '';
-  document.getElementById('picture3').src = '';
   document.getElementById("again").innerHTML = '';
   document.getElementById("startButton").innerHTML ='<input class="btn"　type="button" value="スタート" onclick="start();">'
   document.getElementById("rpsButton").innerHTML = '';
@@ -144,7 +139,6 @@ function RockPaperScissors(myHandNum){
       lose.value = loseNum;
       document.getElementById("again").innerHTML =  '<input class="btn"　type="button" value="もう一度" onclick="again();">';
       document.getElementById("message3").innerHTML = `<h3>負け</h3>`;
-      document.getElementById('picture3').src = loseImg;
     } else if(rpsResultNum === 2) {
       rpsResult = "あいこ";
       document.getElementById("message3").innerHTML = `<h3>あいこで</h3>`;
@@ -209,7 +203,6 @@ function lookThisWay(myNum) {
   lose.value = loseNum;  
 　// 判定結果に応じてテキストと画像を表示
   document.getElementById("message3").innerHTML = `<h3>結果:${result}</h3>`;
-  document.getElementById('picture3').src = resultImg;
 　//もう一度ボタンを出現
   document.getElementById("again").innerHTML =  '<input class="btn"　type="button" value="もう一度" onclick="again();">';
 }
