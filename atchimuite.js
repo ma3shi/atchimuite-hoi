@@ -70,7 +70,7 @@ function RockPaperScissors(myHandNum){
   let rpsResult;
   let rpsResultNum; 
   //手の画像
-  const handImg = ["rock.png","paper.png","scissors.png"];
+  const handImg = ["rock.png","scissors.png","paper.png"];
   //じゃんけんボタンを消す
   document.getElementById("rpsButton").innerHTML = '';
   //0:ぐー　1:ちょき　2:ぱー
